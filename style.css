@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *,*::before ,*::after{
     padding: 0;
     margin: 0;
@@ -9,12 +11,14 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+    font-family: "Roboto", sans-serif;
 }
 .weatherCon{
     width: 400px;
-    height: 650px;
+    height: 700px;
     background: linear-gradient(black , red);
     border-radius: 16px;
+    padding: 10px;
     
 }
 .searchInput{
@@ -39,4 +43,63 @@
 }
 .locationBox span{
     font-size: 25px;
+}
+.tempBox{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 1rem;
+}
+.temp{
+    font-size: 4.5rem;
+    text-align: start;
+    display: flex;
+    gap: 5px;
+}
+.temp span{
+    font-size: 2.5rem;
+}
+.weatherStatus{
+    font-size: 1.5rem;
+}
+.display{
+    background: #859295;
+    opacity: .5;
+    width: 160px;
+    height: 140px;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.minMaxCon{
+    display: flex;
+    justify-content: center;
+    color: #000;
+    gap: 15px;
+    margin-top: 20px;
+}
+.minMaxCon .temp{
+    font-size: 1.4rem;
+    align-items: center;
+}
+.minMax{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.minMaxBox{
+    display: flex;
+    flex-direction: column;
+    
+}
+#max , #min{
+    font-size: 20px;
+    font-weight: 600;
+}
+.feelBox{
+    margin-bottom: 10px;
 }
