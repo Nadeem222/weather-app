@@ -6,7 +6,13 @@ const temp = document.getElementById('temp'),
         min = document.getElementById('min'),
         max = document.getElementById('max'),
         locationName = document.getElementById('location'),
-        weatherStatus =document.getElementById('weatherStatus')
+        weatherStatus =document.getElementById('weatherStatus'),
+        humidity = document.getElementById('humidity'),
+        windSpeed = document.getElementById('windSpeed'),
+        pressure = document.getElementById('pressure'),
+        visibility = document.getElementById('visibilty'),
+        sunrise = document.getElementById('sunrise'),
+        sunset = document.getElementById('sunset')
 
 const getWeather = () =>{
 
@@ -25,7 +31,21 @@ const getWeather = () =>{
         tempMain.innerText = `${Math.round(response.main.temp)} `
         locationName.innerText = response.name
         weatherStatus.innerText = response.weather[0].description
-
+        humidity.innerText = `${response.main.humidity}%`
+        let windspeedInKilometer = response.wind.speed * 3.6
+        windSpeed.innerText = `${windspeedInKilometer.toFixed(2)} km/h`
+        pressure.innerText = ` ${response.main.pressure} mBar`
+        let visibilityinKilometer = response.visibility / 1000;
+        visibility.innerHTML = `${visibilityinKilometer} km`
+        // let convertTime = (timestamp , timeZone) => {
+        //     let date = new Date(timestamp * timeZone) / 1000;
+        //     return date.toLocaleString([], { hour: '2-digit', minute: '2-digit', hour12: true });
+        // }
+        // let sunriseTime = convertTime(response.sys.sunrise , response.timezone)
+        // let sunsetTime = convertTime(response.sys.sunset , response.timezone)
+        // console.log(sunriseTime , sunsetTime);
+        // sunrise.innerText = `${sunriseTime} am`
+        // sunset.innerText = `${sunsetTime} pm`
 
         console.log(response , temprature , locationName);
     })
