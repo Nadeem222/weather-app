@@ -15,7 +15,7 @@
 }
 .weatherCon{
     width: 400px;
-    height: 700px;
+    height: 800px;
     background: linear-gradient(black , red);
     border-radius: 16px;
     padding: 10px;
@@ -51,7 +51,7 @@
     justify-content: end;
     padding: 0 1rem;
 }
-.temp{
+.temp , .tempMain{
     font-size: 4.5rem;
     text-align: start;
     display: flex;
@@ -66,8 +66,8 @@
 .display{
     background: #859295;
     opacity: .5;
-    width: 160px;
-    height: 140px;
+    width: 150px;
+    height: 130px;
     border-radius: 8px;
     padding: 10px;
     display: flex;
@@ -102,4 +102,39 @@
 }
 .feelBox{
     margin-bottom: 10px;
+}
+.humidityCon{
+   margin: 0 20px;
+    height: 150px;
+    background: #859295;
+    opacity: .5;
+    border-radius: 16px;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.humidity{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.humidity span{
+    width: 50%;
+}
+.humidity span:last-child{
+    text-align: center;
+}
+.sunriseCon{
+    display: flex;
+    background-color: #859295;
+    opacity: .5;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 15px 0;
+    margin: 10px 20px 0px 20px;
+    gap: 10px;
+    font-size: 18px;
+    color: #000;
 }
