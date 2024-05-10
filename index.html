@@ -10,7 +10,11 @@
 <body>
     <div class="container">
         <div class="weatherCon">
-            <input type="text" placeholder="enter your City" id="searchInput" class="searchInput">
+            <div class="inputCon">
+                <input type="text" placeholder="Enter your City" id="searchInput" class="searchInput">
+                <span onclick="getWeather()"><i class="fa-solid fa-chevron-right"></i></span>
+
+            </div>
             <div class="locationBox">
                 <span><i class="fa-solid fa-location-dot"></i></span>
                 <div id="location"></div>
@@ -68,7 +72,7 @@
 
     </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
