@@ -8,35 +8,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="weatherCon">
-            <div class="inputCon">
+            <!-- <div class="inputCon">
                 <input type="text" placeholder="Enter your City" id="searchInput" class="searchInput">
                 <span onclick="getWeather()"><i class="fa-solid fa-chevron-right"></i></span>
 
-            </div>
+            </div> -->
             <div class="locationBox">
                 <span><i class="fa-solid fa-location-dot"></i></span>
-                <div id="location"></div>
+                <div id="location" class="editable">karachi</div>
             </div>
             <div class="tempBox">
-                <div class="temp" ><small id="tempMain" class="tempMain">24</small> <span>° C</span></div>
+                <div class="iconBox">
+                    <div class="temp" ><small id="tempMain" class="tempMain">24</small> <span>° C</span></div>
+                    <div class="mainIcon"><img src="./icon/sunrise1.png" alt=""></div>
+
+                </div>
                 <div class="weatherStatus" id="weatherStatus">Clear SKy</div>
             </div>
             <div class="minMaxCon">
                 <div class="feelLike display">
                     <div class="feelBox">
-                        <span>Temperature</span>
+                        <span class="minMax-Text">Temperature</span>
                         <p class="temp " ><span id="temp">24</span> <span>°</span></p>
                     </div>
                     <div class="feelBox">
 
-                        <span>Feel like</span>
+                        <span class="minMax-Text">Feel like</span>
                         <p class="temp " ><span id="feelLike">24</span> <span>°</span></p>
                     </div>
                 </div>
                 <div class="minMaxBox display" style="text-align: center;">
-                    <span>On the day</span>
+                    <span class="minMax-Text">On the day</span>
                     <div class="minMax"><span><i class="fa-solid fa-arrow-up"></i></span><span>Max</span><span id="max">37 <span></span>°</span></div>
                     <div class="minMax"><span><i class="fa-solid fa-arrow-down"></i></span><span>Min</span><span id="min">37 <span></span>°</span></div>
                     
@@ -63,7 +67,7 @@
             <div class="bottom">
                 <div class="sunriseCon">
                     <p>Sunrise: <span id="sunrise">6:32 am</span></p>
-                    <p>Icon</p>
+                    <p id="icon"></p>
                     <p>sunset: <span id="sunset">7:00 pm</span></p>
                 </div>
             </div>
