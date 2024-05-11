@@ -173,6 +173,7 @@ input{
     margin: 10px 20px 0px 20px;
     gap: 10px;
     font-size: 18px;
+    padding: 8px 0px;
 }
 #icon img{
     width: 40px;
